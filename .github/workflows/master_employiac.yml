@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'employiac'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3BA5B145C116416699AB1381BCEA282E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29441F0408B348869C09D18EE80F4610 }}
           package: .
