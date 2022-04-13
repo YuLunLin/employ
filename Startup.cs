@@ -45,7 +45,7 @@ namespace employ {
                 app.UseDeveloperExceptionPage ();
             }
 
-            app.UseSwagger ();
+           
             app.UseSwagger (c => {
                 c.RouteTemplate = "swagger/{documentName}/swagger.json";
             });
@@ -54,11 +54,11 @@ namespace employ {
                 c.SwaggerEndpoint ("/swagger/v1/swagger.json", "My API V1");
             });
 
-            //app.UseHttpsRedirection ();
+            app.UseHttpsRedirection ();
 
             app.UseRouting ();
 
-            //app.UseAuthorization ();
+            app.UseAuthorization ();
 
             app.UseEndpoints (endpoints => {
                 endpoints.MapControllers ();
